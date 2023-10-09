@@ -1,0 +1,22 @@
+.card-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: whitesmoke;
+  max-width: 400px;
+  max-height: 400px;
+  color: grey;
+  padding: 30px;
+  border-radius: 30px;
+}
+
+.content > img { 
+  min-width: 100px;
+}
+
+.content-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
