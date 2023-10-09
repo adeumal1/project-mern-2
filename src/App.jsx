@@ -5,6 +5,7 @@ import './App.css';
 import useCurrentPosition from './hooks/useCurrentPosition';
 import Card from './components/Card/Card';
 import Preloader from './components/Preloader/Preloader';
+import Navbar from './components/Navbar/Navbar';
 
 function App() {
   const url = 'https://api.openweathermap.org/data/2.5/weather?';
@@ -30,6 +31,7 @@ function App() {
   return (
     <div className="container">
       <div id="cloud-intro">
+        <Navbar />
         <Preloader />
         <Card props={weatherData} />
       </div>

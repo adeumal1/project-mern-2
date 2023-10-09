@@ -19,7 +19,9 @@ const Card = (props) => {
           </div>
         </div>
       ) : (
-        <p>Loading weather data...</p>
+        <div>
+          <p>Please, activate browser location...</p>
+        </div>
       )}
     </div>
   )

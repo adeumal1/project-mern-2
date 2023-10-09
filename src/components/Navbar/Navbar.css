@@ -1,0 +1,37 @@
+.navbar-container {
+  position: absolute;
+  top: 0;
+  background-color: whitesmoke;
+  padding: 30px;
+  border-radius: 30px;
+  margin-top: 20px;
+  min-width: 335px;
+}
+
+.navbar-container nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  list-style: none;
+}
+
+.navbar-container nav li a{
+  text-decoration: none;
+  color: grey;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.navbar-container nav li a:hover{
+  color: skyblue;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar-container {
+    position: relative;
+    width: 75%;
+    margin-bottom: 10px;
+    min-width: 0;
+  }
+}
