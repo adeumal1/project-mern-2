@@ -4,7 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faWind, faDroplet, faClock } from '@fortawesome/free-solid-svg-icons'
 
 const CardForecast = (props) => {
-  console.log(props.props)
   return (
     <>
       {props.props ? (

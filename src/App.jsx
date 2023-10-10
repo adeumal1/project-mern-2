@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar/Navbar";
 const CitiesPage = lazy(() => import("./pages/CitiesPage"));
 const LocationPage = lazy(() => import("./pages/LocationPage"));
 const ForecastPage = lazy(() => import("./pages/ForecastPage"));
+const ForecastSelectedPage = lazy(() => import("./pages/ForecastSelectedPage"))
 
 function App() {
   return (
@@ -35,6 +36,14 @@ function App() {
             element={
               <React.Suspense fallback={<h2>Cargando...</h2>}>
                 <ForecastPage />
+              </React.Suspense>
+            }
+          />
+          <Route
+            path="/forecast-selected"
+            element={
+              <React.Suspense fallback={<h2>Cargando...</h2>}>
+                <ForecastSelectedPage />
               </React.Suspense>
             }
           />

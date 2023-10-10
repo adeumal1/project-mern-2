@@ -45,12 +45,10 @@ const Cities = () => {
           ))}
         </select>
         <Card props={weatherData} />
-        <Link to="/forecast" state={selectedCity}>
-          <button type="button">Click Me!</button>
+        <Link to="/forecast-selected" state={selectedCity}>
+          <button type="button" className='button-cities'>See City Forecast</button>
         </Link>
       </div>
-      
-    
   );
 };
 
