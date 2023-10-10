@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './CardForecast.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faWind, faDroplet, faClock } from '@fortawesome/free-solid-svg-icons'
 
-const CardForecast = (props) => {
+const CardForecast = (props) => { 
   return (
     <>
       {props.props ? (

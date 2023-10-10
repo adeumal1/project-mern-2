@@ -1,10 +1,9 @@
 import React from 'react'
 import ForecastSelected from '../components/ForecastSelected/ForecastSelected';
-import CardForecast from '../components/CardForecast/CardForecast';
+import Cities5days from '../components/Cities5days/Cities5days';
 
 const ForecastSelectedPage = () => {
-  const weatherData  = ForecastSelected();
-  return <CardForecast props={weatherData} />
+  return <Cities5days />
 }
 
 export default ForecastSelectedPage
