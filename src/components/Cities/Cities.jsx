@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Card from '../Card/Card';
 import {citiesData} from '../../assets/data';
 import Axios from 'axios';
+import { Link } from "react-router-dom";
 import "./Cities.css";
 
 const Cities = () => {
@@ -26,8 +27,8 @@ const Cities = () => {
       });
   }, [selectedCity]);
 
-  const handleChange = (event) => {
-    const selectedCityName = event.target.value;
+  const handleChange = (e) => {
+    const selectedCityName = e.target.value;
     const city = cities.find((c) => c.name === selectedCityName);
     if (city) {
       setSelectedCity(city);
@@ -44,6 +45,9 @@ const Cities = () => {
           ))}
         </select>
         <Card props={weatherData} />
+        <Link to="/forecast" state={selectedCity}>
+          <button type="button">Click Me!</button>
+        </Link>
       </div>
       
     
