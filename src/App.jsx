@@ -4,6 +4,7 @@ import "./App.css";
 
 import Preloader from "./components/Preloader/Preloader";
 import Navbar from "./components/Navbar/Navbar";
+import OnLoad from './components/OnLoad/OnLoad';
 const CitiesPage = lazy(() => import("./pages/CitiesPage"));
 const LocationPage = lazy(() => import("./pages/LocationPage"));
 const ForecastPage = lazy(() => import("./pages/ForecastPage"));
@@ -18,7 +19,7 @@ function App() {
           <Route
             path="/"
             element={
-              <React.Suspense fallback={<h2>Cargando...</h2>}>
+              <React.Suspense fallback={<OnLoad />}>
                 <LocationPage />
               </React.Suspense>
             }
@@ -26,7 +27,7 @@ function App() {
           <Route
             path="/cities"
             element={
-              <React.Suspense fallback={<h2>Cargando...</h2>}>
+              <React.Suspense fallback={<OnLoad />}>
                 <CitiesPage />
               </React.Suspense>
             }
@@ -34,7 +35,7 @@ function App() {
           <Route
             path="/forecast"
             element={
-              <React.Suspense fallback={<h2>Cargando...</h2>}>
+              <React.Suspense fallback={<OnLoad />}>
                 <ForecastPage />
               </React.Suspense>
             }
@@ -42,7 +43,7 @@ function App() {
           <Route
             path="/forecast-selected"
             element={
-              <React.Suspense fallback={<h2>Cargando...</h2>}>
+              <React.Suspense fallback={<OnLoad />}>
                 <ForecastSelectedPage />
               </React.Suspense>
             }
